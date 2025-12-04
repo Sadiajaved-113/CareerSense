@@ -13,7 +13,7 @@ const upload = multer({ dest: "uploads/" });
 
 const gemini = google("gemini-2.0-flash");
 
-    // Zod Schema
+    // ats Schema
     const Schema=z.object({
         matchRate: z.number().min(0).max(100),
   categories: z.object({

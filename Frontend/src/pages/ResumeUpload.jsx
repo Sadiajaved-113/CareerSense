@@ -230,7 +230,7 @@ React.useEffect(() => {
           </div>
         </div>
       ) : (
-        // === Dashboard Section (after response) ===
+
       <Dashboard result={result} handleNewResume={handleNewResume}/>
       )
     }

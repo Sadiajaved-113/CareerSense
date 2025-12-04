@@ -1,7 +1,10 @@
 import mongoose from "mongoose";
 
 export const connectDB = async () => {
-    await mongoose.connect("mongodb+srv://anamjutt:dbCareerSense22102@cluster0.waxh0mu.mongodb.net/CareerSense")
-    .then(() => console.log("Database connected"))
-
-    }
+  try {
+    await mongoose.connect("mongodb://127.0.0.1:27017/CareerSense");
+    console.log("MongoDB  connected successfully");
+  } catch (error) {
+    console.error("Database connection failed:", error.message);
+  }
+};
